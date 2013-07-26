@@ -52,9 +52,9 @@ if (S_ISDIR(filestat.st_mode)) continue;
 fin.open(filepath.c_str());
 
 fin.close();
-write.open(filepath.c_str());
+//write.open(filepath.c_str());
 
-write.close();
+//write.close();
 
 
 }

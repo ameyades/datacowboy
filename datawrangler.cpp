@@ -5,7 +5,7 @@
 #include <sstream>
 using namespace std;
 #include "dataentry.h"
-
+#include "searcher.h"
 #include "plotter.h"
 #include "user.h"
 
@@ -18,21 +18,7 @@ cin >> name;
 user alpha;
 alpha.username = name;
 
-/*cout << "Is your date dynamic? (i.e. does it change over time / other variable)" << endl;
-cin >> option1;
-if(option1 == "yes")
-{
-//alpha.directoryconfigure();
 
-
-}
-else
-{
-//alpha.directoryconfigure();
-
-
-
-}*/
 
 return 0;	
 }

@@ -27,7 +27,7 @@ std:: vector< vector<double> > ints;
 
 dataentry();
 void chronic_collector();
-
+void qury();
 void getstring();
 void getquant();
 void getboth();

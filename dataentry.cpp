@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "searcher.h"
 using namespace std;
 
 #include "dataentry.h"
@@ -11,6 +12,35 @@ dataentry::dataentry()
 
 
 }
+
+
+void dataentry::qury()
+{
+
+
+for(int i = 0; i < quals.size(); i++)
+{
+string theta = quals[i];
+searcher yup(theta);
+
+
+}
+
+for(int j = 0; j < quants.size(); j++)
+{
+string theta2 = quants[j];
+
+
+searcher yoo(theta2);
+
+
+}
+
+
+
+}
+
+
 
 void dataentry::getstring()
 { 
@@ -69,16 +99,13 @@ out = true;
 
 }
 
-int cap = quants.size();
 
 
-for (int q = 0; q < cap; q++)
-{
-char zee = static_cast<char> (5 + q); 
-ints.push_back(vector<int> zee);
 
 
-} 
+
+
+
 
 
 
@@ -90,11 +117,59 @@ ints.push_back(vector<int> zee);
 void dataentry::getboth()
 {
 
+bool out;
+out = false;
+cout << "What is the type(s) of qualitative data you are searching for?" << endl;
+while(!out)
+{
+string choice;
+string thing;
+cin >> thing;
+quals.push_back(thing);
+cout << "Add more? Y or N" << endl;
+cin >> choice;
+if(choice == "N" or "no" or "No")
+{
 
+out = true;
 
 
 
 }
+}
+
+
+bool in;
+in = false;
+cout << "What is the type(s) of quantitative data you are searching for?" << endl;
+while(!in)
+{
+string choice;
+string thing;
+cin >> thing;
+quants.push_back(thing);
+cout << "Add more? Y or N" << endl;
+cin >> choice;
+if(choice == "N" or "no" or "No")
+{
+
+in = true;
+
+
+
+}
+}
+
+
+
+}
+
+
+
+
+
+
+
 
 
 void dataentry::chronic_collector()
