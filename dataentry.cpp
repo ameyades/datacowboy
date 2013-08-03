@@ -10,11 +10,10 @@ dataentry::dataentry()
 
 
 
-
 }
 
 
-void dataentry::qury()
+void dataentry::qury(string n)
 {
 
 
@@ -22,7 +21,7 @@ for(int i = 0; i < quals.size(); i++)
 {
 string theta = quals[i];
 searcher yup(theta);
-
+yup.finder(n);
 
 }
 
@@ -32,6 +31,7 @@ string theta2 = quants[j];
 
 
 searcher yoo(theta2);
+yoo.finder(n);
 
 
 }
@@ -49,27 +49,41 @@ out = false;
 cout << "What is the type(s) of qualitative data you are searching for?" << endl;
 while(!out)
 {
-string choice;
-string thing;
+cout << "Complete Loop" << endl;
+char* choice;
+choice = new char [20];
+char* thing;
+thing = new char [20];
 cin >> thing;
 quals.push_back(thing);
 cout << "Add more? Y or N" << endl;
 cin >> choice;
-if(choice == "N" or "no" or "No")
+if(choice == "Y")
 {
 
-out = true;
+out = false;
 
 
 
 }
 
+else
+{
 
-
-
-
+break;
 
 }
+
+cout << "Loop Qual" << endl;
+//loop
+delete [] thing;
+delete [] choice;
+
+}
+
+//function
+
+
 }
 
 void dataentry::getquant()
@@ -79,33 +93,48 @@ out = false;
 cout << "What is the type(s) of quantitative data you are searching for?" << endl;
 while(!out)
 {
-string choice;
-string thing;
+cout << "Complete Loop" << endl;
+char* choice;
+char* thing;
+choice = new char[20];
+thing = new char[20];
+
 cin >> thing;
 quants.push_back(thing);
-cout << "Add more? Y or N" << endl;
+cout << "Add more? Yes or No" << endl;
 cin >> choice;
-if(choice == "N" or "no" or "No")
+if(choice == "Yes")
 {
 
-out = true;
+out = false;
 
 
+
+}
+
+else
+{
+
+
+break;
+
+
+}
+
+cout << "Loop Quant" << endl;
+//loop
+delete [] thing;
+delete [] choice;
 
 }
 
 
 
 
-}
 
 
 
-
-
-
-
-
+//function
 
 
 
@@ -122,21 +151,44 @@ out = false;
 cout << "What is the type(s) of qualitative data you are searching for?" << endl;
 while(!out)
 {
-string choice;
-string thing;
+cout << "Complete Loop" << endl;
+char* choice;
+char* thing;
+choice = new char[20];
+thing = new char[20];
 cin >> thing;
 quals.push_back(thing);
+//cin.ignore();
 cout << "Add more? Y or N" << endl;
 cin >> choice;
-if(choice == "N" or "no" or "No")
+if(choice == "Y")
 {
 
-out = true;
+out = false;
 
 
 
 }
+else
+{
+
+
+break;
+
+
 }
+
+cout << "Loop BA" << endl;
+
+//loop
+delete [] choice;
+delete [] thing;
+//cout << thing << endl;
+//cout << choice << endl;
+
+}
+
+cout << "between loops" << endl; 
 
 
 bool in;
@@ -144,23 +196,42 @@ in = false;
 cout << "What is the type(s) of quantitative data you are searching for?" << endl;
 while(!in)
 {
-string choice;
-string thing;
-cin >> thing;
-quants.push_back(thing);
+
+cout << "Complete Loop" << endl;	
+char* choice2;
+char* thing2;
+choice2 = new char[20];
+thing2 = new char[20];
+cin >> thing2;
+quants.push_back(thing2);
 cout << "Add more? Y or N" << endl;
-cin >> choice;
-if(choice == "N" or "no" or "No")
+cin >> choice2;
+if(choice2 == "Y")
 {
 
-in = true;
+in = false;
 
 
 
 }
+else
+{
+
+break;
+
+
 }
 
+cout << "Loop BB" << endl;
+//loop
+delete [] choice2;
+delete [] thing2;
 
+
+ }
+
+
+//function
 
 }
 
@@ -189,6 +260,17 @@ divisors = total_moments / increment;
 
 }
 
+
+void dataentry::revup()
+{
+
+
+
+
+
+
+
+}
 
 
 

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Markup.h"
 #include <errno.h>
 #include <dirent.h>
 #include <unistd.h>
@@ -51,6 +52,10 @@ if (S_ISDIR(filestat.st_mode)) continue;
 
 fin.open(filepath.c_str());
 
+
+uno.qury(filepath.c_str());
+
+
 fin.close();
 //write.open(filepath.c_str());
 
@@ -97,7 +102,10 @@ uno.getboth();
 
 
 
+
+
 }
+
 
 
 user::~user(){

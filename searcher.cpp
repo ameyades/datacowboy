@@ -1,5 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <stdio.h>
+#include "Markup.h"
+
 
 using namespace std;
 
@@ -50,7 +53,6 @@ ignore[38] =  "so";
 ignore[39] =  "he";
 ignore[40] =  "she";
 ignore[41] =  "how";
-
 
 
 
@@ -106,9 +108,25 @@ ignore[41] =  "how";
 
 
 
-
-
-
-
-
 }
+
+void searcher::finder(string n)
+{
+
+
+CMarkup xml;
+
+bool bSuccess = xml.Load(n);
+
+string sXML = xml.GetData();
+
+cout << sXML << endl;
+
+	
+}
+
+
+
+
+
+

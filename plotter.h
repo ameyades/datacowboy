@@ -1,3 +1,7 @@
+#ifndef PLOTTER_H
+#define PLOTTER_H
+
+
 using namespace std;
 
 
@@ -19,3 +23,5 @@ vector <dataentry> timeline;
 
 
 };
+
+#endif

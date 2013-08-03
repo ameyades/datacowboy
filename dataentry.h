@@ -1,3 +1,6 @@
+#ifndef DATAENTRY_H
+#define DATAENTRY_H
+
 using namespace std;
 
 class dataentry
@@ -27,10 +30,14 @@ std:: vector< vector<double> > ints;
 
 dataentry();
 void chronic_collector();
-void qury();
+void qury(string n);
 void getstring();
 void getquant();
 void getboth();
+void revup();
 ~dataentry();
 
 };
+
+
+#endif
