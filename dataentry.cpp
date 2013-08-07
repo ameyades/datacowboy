@@ -159,9 +159,9 @@ thing = new char[20];
 cin >> thing;
 quals.push_back(thing);
 //cin.ignore();
-cout << "Add more? Y or N" << endl;
+cout << "Add more? Yes or No" << endl;
 cin >> choice;
-if(choice == "Y")
+if(choice == "Yes")
 {
 
 out = false;
@@ -204,9 +204,9 @@ choice2 = new char[20];
 thing2 = new char[20];
 cin >> thing2;
 quants.push_back(thing2);
-cout << "Add more? Y or N" << endl;
+cout << "Add more? Yes or No" << endl;
 cin >> choice2;
-if(choice2 == "Y")
+if(choice2 == "Yes")
 {
 
 in = false;
