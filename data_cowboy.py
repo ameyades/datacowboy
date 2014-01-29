@@ -96,7 +96,6 @@ for sentence in zen.sentences:
             else:
                 noundict[str(words).lower()]=1;
         #print (sentence.polarity)
-#print("screw you")
 #print (noun_list);
 polarity= totalpolarity/totalcount
 print(polarity)
